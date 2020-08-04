@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running JS</title>
+</head>
+<body>
+    <!--
+    <script>
+        console.log('hey') // 就简单应用一下
+    </script>
+    -->
+
+    <!-- 
+    <p>Hey</p> 
+    <script>
+        const p = document.querySelector('p');
+        console.log(p); // JS语句要写在后面不然会找不到对象
+    </script> 
+    -->
+
+    <script src="./anotherfile.js" async defer>
+        console.log('这里打啥都不会执行') // 属性里有src的话这里打啥都不会执行
+        // 这里放个async defer就能等全部加载完再执行JS语句，不会找不到对象了
+    </script> 
+    <p>Hey</p> 
+
+</body>
+</html> 
